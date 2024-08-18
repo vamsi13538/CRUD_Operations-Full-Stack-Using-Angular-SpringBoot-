@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Bree+Serif&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:wght@300&family=Lobster&family=Matemasie&family=Roboto+Mono:wght@200&display=swap');
+
+/* Navbar section starts here */
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.2rem 0.2rem;
+    width: 99%;
+    margin: 0.1rem auto;
+    background-color: #4F1787;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.logoContainer{
+    padding: 0.2rem 0.2rem;
+    width: max-content;
+}
+
+.logoContainer h1{
+    margin: 0.2rem 0.2rem;
+    padding: 0.2rem 0.2rem;
+    font-size: 1.8rem;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.fa-edge{
+    margin-right: 0.2rem;
+}
+
+.ulList{
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    width: max-content;
+    margin-right: 2rem;
+}
+
+.listItem a{
+    border: 1px solid silver;
+    border-radius: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+
+.listItem a:hover{
+    background-color: white;
+    color: #4F1787;
+}
+
+/* Navbar section ends here */
+
+/* Footer section starts here */
+.footer{
+    position: fixed;
+    bottom: 0;
+    right: 0.2rem;
+    padding: 0.4rem 0.4rem;
+    width: 99%;
+    margin: 0.1rem auto;
+    text-align: center;
+    background-color: #4F1787;
+    color: white;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.footer p{
+    margin: 0.4rem 0.4rem;
+}
+
+/* Footer section ends here */
+
+/* Media queries section starts here */
+@media(max-width: 910px){
+    /* Users list section media queries starts here */
+    thead tr th{
+        font-size: 0.9rem;
+    }
+    
+    tbody tr td{
+        font-size: 0.9rem;
+    }
+
+    .fa-pen, .fa-trash, .fa-eye{
+        font-size: 0.7rem;
+    }
+    /* Users list section media queries ends here */
+
+    /* Add user & Update user section media queries starts here */
+    .formItems{
+        width: 60%;
+    }
+    /* Add user & Update user section media queries ends here */
+
+    /* View user section media queries starts here */
+    .viewUserList{
+        width: 50%;
+    }
+    /* View user section media queries ends here */
+}
+
+@media(max-width: 740px){
+    /* Users list section media queries starts here */
+    .userListResults{
+        overflow-x: scroll;
+    }
+
+    .usersListTable{
+        overflow-x: scroll;
+    }
+    /* Users list section media queries ends here */
+
+    /* Add user & Update user section media queries starts here */
+    .formItems{
+        width: 80%;
+    }
+    /* Add user & Update user section media queries ends here */
+
+    /* View user section media queries starts here */
+    .viewUserList{
+        width: 70%;
+    }
+    /* View user section media queries ends here */
+
+    /* Nav bar section media queries starts here */
+    .ulList{
+        display: flex;
+        gap: 0.4rem;
+        list-style: none;
+        width: max-content;
+        margin-right: 0.4rem;
+        font-size: 0.8rem;
+    }
+    /* Nav bar section media queries ends here */
+}
+
+/* Media queries section ends here */

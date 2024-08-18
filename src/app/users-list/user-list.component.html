@@ -1,0 +1,56 @@
+<section class="userListResults">
+    <h2 class="usersListText"><i class="fa-solid fa-users"></i> Users List</h2>
+    <table class="usersListTable">
+        <thead>
+            <tr>
+                <th>User Id</th>
+                <th>First Name</th>
+                <th>Last Name </th>
+                <th>Phone</th>
+                <th>Email</th>
+                <th scope="col">
+                    <span>
+                        Edit
+                    </span>
+                </th>
+                <th scope="col">
+                    <span>
+                        Delete
+                    </span>
+                </th>
+                <th class="viewTableHead" scope="col">
+                    <span>
+                        View
+                    </span>
+                </th>
+            </tr>
+        </thead>
+        <tbody class="userLIstTableBody">
+            <tr *ngFor="let use of user">
+                <td> {{ use.id }} </td>
+                    <td> {{ use.firstname }} </td>
+                    <td> {{ use.lastname }} </td>
+                    <td> {{ use.phone }} </td>
+                    <td> {{ use.email }} </td>
+                <td>
+                    <button class="updateBtn" (click)="updateUser(use.id)">
+                        <i class="fa-solid fa-pen"></i>   
+                    </button>
+                </td>
+                <td>
+                    <button class="deleteBtn" (click)="deleteUser(use.id)">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </td>
+
+                <td>
+                    <button class="viewBtn" (click)="userDetails(use.id)">
+                        <i class="fa-solid fa-eye"></i>
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<script src="https://kit.fontawesome.com/7e99a9e738.js" crossorigin="anonymous"></script>

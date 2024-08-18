@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Bree+Serif&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:wght@300&family=Lobster&family=Matemasie&family=Roboto+Mono:wght@200&display=swap');
+
+/* Users list section starts here */
+.userListResults{
+    padding: 0.2rem 0.2rem;
+    width: 99%;
+    margin: 0.1rem auto;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.usersListText{
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+    margin: 1rem 0rem;
+    text-transform: uppercase;
+}
+
+.usersListTable{
+    border-collapse: collapse;
+    /* border: 1px solid #4F1787; */
+    padding: 0.2rem 0.2rem;
+    width: 99%;
+    margin: 0.1rem auto;
+}
+
+thead tr th{
+    border: 1.6px solid silver;
+    border-right: 1px solid white;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.4rem 0.4rem;
+    background-color: #4F1787;
+    color: white;
+    animation: usersListTableHeadDown 1.2s ease-in-out forwards;
+}
+
+@keyframes usersListTableHeadDown {
+    0% {
+        -webkit-transform: translateY(-1200px) scale(0.7);
+        transform: translateY(-1200px) scale(0.7);
+        opacity: 0.7;
+      }
+    
+      80% {
+        -webkit-transform: translateY(0px) scale(0.7);
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+      }
+    
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+}
+
+.viewTableHead{
+    border-right: 1px solid black;
+}
+
+tbody tr td{
+    border: 1.6px solid silver;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 0.4rem 0.4rem;
+    background-color: white;
+    animation: usersListTableHeadUp 2.2s ease-in-out forwards;
+}
+
+@keyframes usersListTableHeadUp {
+    0% {
+        -webkit-transform: translateY(1200px) scale(0.7);
+        transform: translateY(1200px) scale(0.7);
+        opacity: 0.7;
+      }
+    
+      80% {
+        -webkit-transform: translateY(0px) scale(0.7);
+        transform: translateY(0px) scale(0.7);
+        opacity: 0.7;
+      }
+    
+      100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+      }
+}
+
+button{
+    padding: 0.4rem 0.6rem;
+    width: 88%;
+    border-radius: 0.4rem;
+    background-color: white;
+    cursor: pointer;
+}
+
+.updateBtn{
+    border: 1px solid yellowgreen;
+    color: yellowgreen;
+}
+
+.deleteBtn{
+    border: 1px solid red;
+    color: red;
+}
+
+.viewBtn{
+    border: 1px solid steelblue;
+    color: steelblue;
+}
+
+.updateBtn:hover{
+    background-color: yellowgreen;
+    color: white;
+}
+
+.deleteBtn:hover{
+    background-color: red;
+    color: white;
+}
+
+.viewBtn:hover{
+    background-color: steelblue;
+    color: white;
+}
+
+.fa-pen, .fa-trash, .fa-eye{
+    font-size: 0.8rem;
+}
+
+.fa-users{
+    font-size: 1.8rem;
+    border: 1px solid silver;
+    padding: 0.4rem 0.8rem;
+    border-radius: 0.4rem;
+    color: #4F1787;
+}
+
+/* Users list section ends here */
+
+/* Media queries section starts here */
+@media(max-width: 910px){
+    /* Users list section media queries starts here */
+    thead tr th{
+        font-size: 0.9rem;
+    }
+    
+    tbody tr td{
+        font-size: 0.9rem;
+    }
+
+    .fa-pen, .fa-trash, .fa-eye{
+        font-size: 0.7rem;
+    }
+    /* Users list section media queries ends here */
+
+    /* Add user & Update user section media queries starts here */
+    .formItems{
+        width: 60%;
+    }
+    /* Add user & Update user section media queries ends here */
+
+    /* View user section media queries starts here */
+    .viewUserList{
+        width: 50%;
+    }
+    /* View user section media queries ends here */
+}
+
+@media(max-width: 740px){
+    /* Users list section media queries starts here */
+    .userListResults{
+        overflow-x: scroll;
+    }
+
+    .usersListTable{
+        overflow-x: scroll;
+    }
+    /* Users list section media queries ends here */
+
+    /* Add user & Update user section media queries starts here */
+    .formItems{
+        width: 80%;
+    }
+    /* Add user & Update user section media queries ends here */
+
+    /* View user section media queries starts here */
+    .viewUserList{
+        width: 70%;
+    }
+    /* View user section media queries ends here */
+
+    /* Nav bar section media queries starts here */
+    .ulList{
+        display: flex;
+        gap: 0.4rem;
+        list-style: none;
+        width: max-content;
+        margin-right: 0.4rem;
+        font-size: 0.8rem;
+    }
+    /* Nav bar section media queries ends here */
+}
+
+/* Media queries section ends here */

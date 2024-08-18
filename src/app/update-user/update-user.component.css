@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@1&family=Bree+Serif&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kanit:wght@300&family=Lobster&family=Matemasie&family=Roboto+Mono:wght@200&display=swap');
+
+/* Create user section starts here */
+.createUserContainer{
+    padding: 0.2rem 0.2rem;
+    width: 99%;
+    margin: 0.1rem auto;
+    margin-top: 0.6rem;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.createUserText{
+    padding: 0.2rem 0.2rem;
+    text-align: center;
+    font-size: 1.92rem;
+    margin-top: 0.6rem;
+    animation: createUserTextFadeDown 1.2s ease-in-out forwards;
+}
+
+@keyframes createUserTextFadeDown{
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+      }
+    
+      to {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+}
+
+.formItems{
+    border: 1px solid #4F1787;
+    border-radius: 0.6rem;
+    padding: 1.2rem 1.2rem;
+    width: 40%;
+    margin: 0.1rem auto;
+    margin-bottom: 1rem;
+    box-shadow: 2px 3px 8px #4F1787;
+}
+
+label{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-left: 0.2rem;
+}
+
+input[type="number"],[type="search"]{
+    border: 1px solid silver;
+    width: 97%;
+    padding: 0.4rem 0.4rem;
+    margin: 0.4rem 0rem;
+    border-radius: 0.3rem;
+    font-size: 1rem;
+}
+
+input[type="search"]{
+    width: 99.4%;
+}
+
+input[type="number"]:focus{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+input[type="search"]:focus{
+    border: none;
+    border-radius: 0px;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1rem;
+}
+
+.submitBtn{
+    border: 1px solid silver;
+    border-radius: 0.2rem;
+    padding: 0.4rem 0.4rem;
+    width: 100%;
+    cursor: pointer;
+    background-color: #4F1787;
+    color: white;
+    opacity: 0.9;
+    font-size: 1rem;
+    text-transform: uppercase;
+    animation: submitBtnRubberBand 1.2s ease-in-out forwards;
+}
+
+@keyframes submitBtnRubberBand{
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+    
+      30% {
+        -webkit-transform: scale3d(1.25, 0.75, 1);
+        transform: scale3d(1.25, 0.75, 1);
+      }
+    
+      40% {
+        -webkit-transform: scale3d(0.75, 1.25, 1);
+        transform: scale3d(0.75, 1.25, 1);
+      }
+    
+      50% {
+        -webkit-transform: scale3d(1.15, 0.85, 1);
+        transform: scale3d(1.15, 0.85, 1);
+      }
+    
+      65% {
+        -webkit-transform: scale3d(0.95, 1.05, 1);
+        transform: scale3d(0.95, 1.05, 1);
+      }
+    
+      75% {
+        -webkit-transform: scale3d(1.05, 0.95, 1);
+        transform: scale3d(1.05, 0.95, 1);
+      }
+    
+      to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+      }
+}
+
+.submitBtn:hover{
+    opacity: 1;
+}
+
+/* Create user section ends here */
+
+/* Media queries section starts here */
+@media(max-width: 910px){
+    /* Users list section media queries starts here */
+    thead tr th{
+        font-size: 0.9rem;
+    }
+    
+    tbody tr td{
+        font-size: 0.9rem;
+    }
+
+    .fa-pen, .fa-trash, .fa-eye{
+        font-size: 0.7rem;
+    }
+    /* Users list section media queries ends here */
+
+    /* Add user & Update user section media queries starts here */
+    .formItems{
+        width: 60%;
+    }
+    /* Add user & Update user section media queries ends here */
+
+    /* View user section media queries starts here */
+    .viewUserList{
+        width: 50%;
+    }
+    /* View user section media queries ends here */
+}
+
+@media(max-width: 740px){
+    /* Users list section media queries starts here */
+    .userListResults{
+        overflow-x: scroll;
+    }
+
+    .usersListTable{
+        overflow-x: scroll;
+    }
+    /* Users list section media queries ends here */
+
+    /* Add user & Update user section media queries starts here */
+    .formItems{
+        width: 80%;
+    }
+    /* Add user & Update user section media queries ends here */
+
+    /* View user section media queries starts here */
+    .viewUserList{
+        width: 70%;
+    }
+    /* View user section media queries ends here */
+
+    /* Nav bar section media queries starts here */
+    .ulList{
+        display: flex;
+        gap: 0.4rem;
+        list-style: none;
+        width: max-content;
+        margin-right: 0.4rem;
+        font-size: 0.8rem;
+    }
+    /* Nav bar section media queries ends here */
+}
+
+/* Media queries section ends here */

@@ -1,0 +1,35 @@
+<div class="createUserContainer">
+    <h2 class="createUserText"><i class="fa-solid fa-user-plus"></i> Add User </h2>
+        <form class="formItems" (ngSubmit)="onSubmit()">
+                <label for="id">Id</label>
+                <div>
+                    <input type="number" class="form-control" id="id" [(ngModel)]="user.id" name="id" placeholder="Enter Your User ID">
+                </div>
+                <label for="firstname">First Name</label>
+                <div>
+                    <input type="search" class="form-control" id="firstname"
+                    [(ngModel)]="user.firstname" name="firstname" placeholder="Enter Your First Name">
+                </div>
+                <label for="lastname">Last Name</label>
+                <div>
+                    <input type="search" class="form-control" id="lastname" [(ngModel)]="user.lastname"
+                    name="lastname" placeholder="Enter Your Last Name">
+                </div>
+                <label for="phone">Phone</label>
+                <div>
+                    <input type="number" class="form-control" id="phone" [(ngModel)]="user.phone"
+                    name="phone" placeholder="Enter Your Contact Number">
+                </div>
+                <label for="email">Email</label>
+                <div>
+                    <input type="search" class="form-control" id="email" [(ngModel)]="user.email"
+                    name="email" placeholder="Enter Your Email">
+                </div>
+            <br />
+            <div class="btnContainer">
+                <button class="submitBtn" type="submit">Submit</button>
+            </div>
+        </form>
+</div>
+
+<script src="https://kit.fontawesome.com/7e99a9e738.js" crossorigin="anonymous"></script>
